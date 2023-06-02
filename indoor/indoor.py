@@ -1,0 +1,1 @@
+print(input('Tell me something: ').lower())
