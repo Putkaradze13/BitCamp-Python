@@ -1,16 +1,20 @@
+# App accepts amount of paid money as input with '$' sign in front
+# and percentage as input with '%' sign at the end, 
+# then it removes '$' and '%' signs from both inputs and calculates amount of left tip.
+
 def main():
-    dollars = dollars_to_float(input("How much was the meal? "))
-    percent = percent_to_float(input("What percentage would you like to tip? "))
-    tip = dollars * percent
+    dollars = dollars_to_float(input("How much was the meal? ").replace('$', ''))
+    percent = percent_to_float(input("What percentage would you like to tip? ").replace('%', ''))
+    tip = dollars * percent / 100
     print(f"Leave ${tip:.2f}")
 
 
 def dollars_to_float(d):
-    amount = float(d[1:])
-    return amount
+    return float(d)
+    
 
 def percent_to_float(p):
-    percent = float(p[:-1]) / 100
-    return percent
+    return float(p) 
+    
 
 main()
