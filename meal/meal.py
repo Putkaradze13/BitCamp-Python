@@ -1,4 +1,4 @@
-
+# prompts the user for a time and outputs whether it’s breakfast time, lunch time, or dinner time
 
 def main():
     user_time = input('What time is it? ')
