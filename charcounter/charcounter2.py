@@ -11,13 +11,13 @@ root = tk.Tk()
 root.title("Character Count")
 
 entry = tk.Entry(root)
-entry.grid(row=0, column=0, padx=10, pady=10)
+entry.grid(row=0, column=0, padx=15, pady=15)
 
 entry.bind("<KeyRelease>", update_character_count)
 
 character_count = tk.StringVar()
 
 label = tk.Label(root, textvariable=character_count)
-label.grid(row=1, column=0, padx=10, pady=10)
+label.grid(row=1, column=0, padx=15, pady=15)
 
 root.mainloop()
