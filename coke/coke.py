@@ -1,4 +1,4 @@
-# prompts the user to insert a coin, one at a time,
+# The app prompts the user to insert a coin, one at a time,
 # each time informing the user of the amount due.
 # Once the user has inputted at least 50 cents,
 # output how many cents in change the user is owed. 
