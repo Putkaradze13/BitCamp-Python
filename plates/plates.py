@@ -1,3 +1,5 @@
+# license plate validation.
+    
 def main():
     plate = input("Plate: ")
     if check_length(plate) and is_alnum(plate) and check_first_two(plate) and check_zero(plate) and nums_not_in_center(plate):
