@@ -10,7 +10,6 @@ def main():
         n = int(n)
         if n > 0:
             random_number = random.randint(1, n)
-            print(random_number)
         else:
             pass
     except ValueError:
