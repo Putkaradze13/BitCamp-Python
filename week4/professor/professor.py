@@ -47,6 +47,7 @@ def generate_integer(level):
                 wrong_try += 1
                 continue
             else:
+                print('EEE')
                 print(f'{x} + {y} = {x + y}')
                 break
     print(f'score: {score}')
